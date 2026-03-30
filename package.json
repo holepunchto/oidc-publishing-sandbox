@@ -9,6 +9,13 @@
   "files": [
     "index.js"
   ],
+  "scripts": {
+    "format": "prettier --write . && lunte --fix",
+    "lint": "prettier --check . && lunte",
+    "test": "npm run test:bare && npm run test:node",
+    "test:bare": "brittle-bare --coverage test.js",
+    "test:node": "brittle-node --coverage test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/holepunchto/oidc-publishing-sandbox.git"
@@ -20,6 +27,8 @@
   },
   "homepage": "https://github.com/holepunchto/oidc-publishing-sandbox#readme",
   "devDependencies": {
+    "brittle": "^3.19.1",
+    "lunte": "^1.6.0",
     "prettier": "^3.4.2",
     "prettier-config-holepunch": "^1.0.0"
   }
