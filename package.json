@@ -1,6 +1,6 @@
 {
   "name": "oidc-publishing-sandbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sandbox for testing OIDC publishing",
   "exports": {
     "./package": "./package.json",
