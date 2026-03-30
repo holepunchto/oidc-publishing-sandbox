@@ -1,0 +1,26 @@
+{
+  "name": "oidc-publishing-sandbox",
+  "version": "1.0.0",
+  "description": "Sandbox for testing OIDC publishing",
+  "exports": {
+    "./package": "./package.json",
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/oidc-publishing-sandbox.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/oidc-publishing-sandbox/issues"
+  },
+  "homepage": "https://github.com/holepunchto/oidc-publishing-sandbox#readme",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "prettier-config-holepunch": "^1.0.0"
+  }
+}
