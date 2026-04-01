@@ -14,7 +14,5 @@ jobs:
     name: Publish
     steps:
       - uses: holepunchto/actions/node-base@v1
-      - run: gh release create ${{ github.ref_name }} --generate-notes
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - uses: holepunchto/actions/create-release@create-release
       - run: npm publish --ignore-scripts
